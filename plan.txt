@@ -1,0 +1,7 @@
+1. It is a p2p file transfer app.
+2. The GUI is based on Python Flet.
+3. When the app starts, it will scan the LAN for any other computers nearby. Pick one to transfer a file. 
+4. I upload a file to the app and then it can be transfered and the other side should confirm whether it will accept it or not.
+5. If it is accepted, the file will be saved into the current working directory.
+6. A reference UI is shown in reference.webp for the app. There is a radar scanner to scan and show who is nearby. The UI should be aesthesitc.
+7. Some documentation for you https://flet.dev/docs/cookbook/animations. Use Flet MCP to check syntax.

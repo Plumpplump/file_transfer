@@ -1,0 +1,28 @@
+# Standalone packaging for the p2p toolkit.
+#
+# This file exists so the folder can be used either way:
+#   * copy `src/p2p/` into another project (no packaging needed), or
+#   * install it:  uv add --path ./src/p2p   /   pip install ./src/p2p
+#
+# The package *is* this directory, hence the package-dir mapping below.
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p2p"
+version = "1.1.0"
+description = "Tiny asyncio peer-to-peer messaging toolkit (standard library only)"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Networking",
+]
+
+[tool.setuptools]
+packages = ["p2p"]
+package-dir = { p2p = "." }
+
+[tool.setuptools.package-data]
+p2p = ["py.typed"]
